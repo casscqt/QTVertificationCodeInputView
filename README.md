@@ -4,12 +4,12 @@
 
 ![需求效果图.png](http://upload-images.jianshu.io/upload_images/132693-b6520d0f79104517.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/300)
 
-特性：
-1.方便类似于上图的验证码样式的二次开发。（边框，间距文字显示等经过了计算调整）
-2.支持代码与xib使用。
+# 特性：  
+1.方便类似于上图的验证码样式的二次开发。（边框，间距文字显示等经过了计算调整）  
+2.支持代码与xib使用。  
 3.支持xib中可视化显示效果
 
-
+# 相关设置
 ```
 /// 验证码位数
 @property(nonatomic, assign)  IBInspectable NSInteger numberOfVertificationCode;
@@ -31,10 +31,10 @@
 @property (nonatomic, copy  ) textDidChangeBlock block;
 ```
 
-xib中使用：
+# xib中使用：
 直接拖一个view，修改xib中类名即可，可通过如图设置属性。
 ![xib内使用.png](http://upload-images.jianshu.io/upload_images/132693-71b27fc32f5214ca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-代码中使用：
+# 代码中使用：
 ```
 - (QTVertificationCodeInputView *)vertificationCodeInputView{
     if (!_vertificationCodeInputView) {
